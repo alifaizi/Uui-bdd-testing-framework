@@ -1,4 +1,4 @@
-#Author: your.email@your.domain.com
+#Author: Jan Faizi
 @tag
 Feature: Account Plan Feature
 

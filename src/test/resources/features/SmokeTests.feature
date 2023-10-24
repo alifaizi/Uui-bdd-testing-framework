@@ -1,4 +1,4 @@
-#Author: Mohammad Shokriyan
+#Author: Jan Faizi
 
 @Smoke @Regression
 Feature: Smoke Test Suite

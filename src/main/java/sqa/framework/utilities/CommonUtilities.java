@@ -16,7 +16,7 @@ import sqa.framework.base.BaseSetup;
 
 public class CommonUtilities extends BaseSetup {
 
-	// All the methods we need for Testing should add here.
+	// All the methods we need for Testing should be added in here.
 
 	// Explicitly Waits.
 	// Selenium Actions.

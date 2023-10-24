@@ -1,4 +1,4 @@
-#Author: Mohammad Shokriyan
+#Author: Jan Faizi
 
 @Regression
 Feature: Accounts Sections Feature
