@@ -35,11 +35,11 @@ public class BaseSetup {
 	public void setupBrowser() {
 		HashMap<String, Object> uiVariables = environmentVariables.getProprty("ui");
 		String url = uiVariables.get("url").toString();
-		
+
 		switch (uiVariables.get("browser").toString().toLowerCase()) {
 		case "chrome":
 			boolean headless = (boolean) uiVariables.get("headless");
-			
+
 			ChromeBrowser chrome = new ChromeBrowser(headless);
 			driver = chrome.openBrowser(url);
 			break;
@@ -56,15 +56,20 @@ public class BaseSetup {
 	}
 
 	public void quitBrowser() {
-		if (driver != null) {
-			driver.quit();
+		try {
+			if (driver != null) {
+				driver.quit();
+				System.out.println("Browser quit successfully.");
+			}
+		} catch (Exception e) {
+			System.err.println("Error while quitting the browser: " + e.getMessage());
 		}
 	}
-	
+
 	public WebDriver getDriver() {
 		return driver;
 	}
-	
+
 	public DatabaseUtility getDbConnection() {
 		HashMap<String, Object> dbVariable = environmentVariables.getProprty("db");
 		String url = (String) dbVariable.get("url");

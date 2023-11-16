@@ -5,6 +5,8 @@ import java.util.Map;
 
 import org.junit.Assert;
 
+import com.aventstack.extentreports.Status;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import sqa.framework.pages.AccountDetailPage;
@@ -46,6 +48,9 @@ public class AccountPageSteps extends CommonUtilities {
 		
 		String actual = getElementText(AccountDetailPage.All_PLAN_COST_AMOUNT);
 		String actualAfter = actual.replace("$", "").replace(",","");
+		
+//		test.log(Status.INFO, "Actual Cost: " + actualAfter);
+		
 		assertEqual(allCost, actualAfter);
 	}
 

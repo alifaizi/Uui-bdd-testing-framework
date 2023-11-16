@@ -3,7 +3,7 @@ package sqa.framework.config;
 import org.openqa.selenium.WebDriver;
 /**
  * 
- * @author Mohammad Shokriyan
+ * @author Ali Faizi
  *
  */
 public interface Browser {

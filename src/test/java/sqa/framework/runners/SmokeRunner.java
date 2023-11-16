@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		publish = true,
-        tags = "@Smoke",
+        tags = "@loginPageTest",
         features = ("classpath:features"),
         glue="sqa.framework.steps",
         dryRun = false,

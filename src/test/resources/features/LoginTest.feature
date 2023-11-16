@@ -1,4 +1,5 @@
 #Author: Jan Faizi
+@loginPageTest
 Feature: Security Test for login
 
   @Smoke @Regression

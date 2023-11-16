@@ -15,6 +15,7 @@ public class LoginPageSteps extends CommonUtilities {
 		String actualTitle = getElementText(CSRLoginPage.APP_TITLE);
 		// Assert Here expected with actual.
 		assertEqual(expectedTitle, actualTitle);
+		
 	}
 
 	@Then("Loaded Section is {string}")
